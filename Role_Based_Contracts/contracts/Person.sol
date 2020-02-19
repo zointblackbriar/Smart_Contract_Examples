@@ -1,33 +1,33 @@
 pragma solidity >=0.4.21 <0.7.0;
 
 contract Person {
-    string title;
-    string firstName;
-    string lastName;
-    string personAddress;
+    string _title;
+    string _firstName;
+    string _lastName;
+    string _personAddress;
 
     function getTitle() public returns(string memory) {
-        return title;
+        return _title;
     }
 
     function setTitle() public returns(string memory title) {
-        title = title;
+        _title = title;
     }
 
     function getFirstName() public returns(string memory) {
-        return firstName;
+        return _firstName;
     }
 
     function setFirstName() public returns(string memory firstName) {
-        title = firstName;
+        _firstName = firstName;
     }
     
     function getLastName() public returns(string memory) {
-        return lastName;
+        return _lastName;
     }
 
     function setLastName() public returns(string memory lastName) {
-        lastName = lastName;
+        _lastName = lastName;
     }
 
     function setPersonAddress() public returns(string memory personAddress){
@@ -35,7 +35,7 @@ contract Person {
     }
 
     function getPersonAddress() public returns(string memory) {
-        return personAddress;
+        return _personAddress;
     }
 
     //string concatenation
@@ -56,7 +56,7 @@ contract Person {
     }
 
         function toString() public returns (string memory) {
-        return strConcat(title, firstName, lastName, personAddress);
+        return strConcat(_title, _firstName, _lastName, _personAddress);
     }
 }
  
