@@ -1,5 +1,5 @@
-var HDWalletProvider = require("truffle-hdwallet-provider");
-const MNEMONIC = 'db23db8d5c5f47bc9782ec351144f867';
+var HDWalletProvider = require("@truffle/hdwallet-provider");
+const MNEMONIC = 'mne mne mne';
 
 module.exports = {
   networks: {
@@ -7,6 +7,11 @@ module.exports = {
       host: "127.0.0.1",
       port: 7545,
       network_id: "*"
+    },
+    testrpc: {
+      host: "127.0.0.1",
+      port: 8545,
+      network_id:"*"
     },
     ropsten: {
       provider: function() {
