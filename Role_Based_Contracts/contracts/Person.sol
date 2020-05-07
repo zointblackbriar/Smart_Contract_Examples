@@ -6,6 +6,8 @@ contract Person {
     string _lastName;
     string _personAddress;
 
+    mapping(string => Person) persons; // for one-to-many relationship
+
     function getTitle() public returns(string memory) {
         return _title;
     }
