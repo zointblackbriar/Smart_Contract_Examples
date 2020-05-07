@@ -1,11 +1,12 @@
-var HDWalletProvider = require("truffle-hdwallet-provider");
+var HDWalletProvider = require("@truffle/hdwallet-provider");
 const MNEMONIC = 'db23db8d5c5f47bc9782ec351144f867';
+const MNEMONICGANACHE = 'april cricket flee basket fix near eight repeat enemy cause curious brain';
 
 module.exports = {
   networks: {
-    development: {
+    development: {  //ganache
       host: "127.0.0.1",
-      port: 7545,
+      port: 8545,
       network_id: "*"
     },
     ropsten: {
