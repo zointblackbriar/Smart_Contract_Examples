@@ -1,0 +1,15 @@
+{
+  "name": "remixfullstackdevelopment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Orcun Oruc",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "web3": "^1.2.6"
+  }
+}
