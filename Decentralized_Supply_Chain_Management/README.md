@@ -45,6 +45,11 @@ Accordingly, our application is ready to go.
 
 ### Screen Pictures of the Application
 
+![alt text](https://github.com/zointblackbriar/Smart_Contract_Examples/blob/master/Decentralized_Supply_Chain_Management/img/First_Image.png)
+![alt text](https://github.com/zointblackbriar/Smart_Contract_Examples/blob/master/Decentralized_Supply_Chain_Management/img/Ganache_GUI.png)
+![alt text](https://github.com/zointblackbriar/Smart_Contract_Examples/blob/master/Decentralized_Supply_Chain_Management/img/Second_Image.png)
+![alt text](https://github.com/zointblackbriar/Smart_Contract_Examples/blob/master/Decentralized_Supply_Chain_Management/img/Third_Image.png)
+
 
 ## Authors
 
