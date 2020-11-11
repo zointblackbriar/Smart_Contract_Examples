@@ -53,7 +53,7 @@ Accordingly, our application is ready to go.
 
 ## Authors
 
-* **Orcun Oruc** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Orcun Oruc** - *Blockchain work* 
 
 
 ## Acknowledgments
