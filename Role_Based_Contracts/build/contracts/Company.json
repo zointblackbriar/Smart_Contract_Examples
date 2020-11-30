@@ -17,21 +17,21 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"sayCompanyHello\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/orcunoruc/Desktop/Projects/Smart_Contract_Development/Role_Based_Contracts/contracts/Company.sol\":\"Company\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/orcunoruc/Desktop/Projects/Smart_Contract_Development/Role_Based_Contracts/contracts/Company.sol\":{\"keccak256\":\"0xd22fb94ef7e558dd1ef157ad8db3db8f402477149b061694bf512735755c72b9\",\"urls\":[\"bzz-raw://1c6d3e1fc9fd201cbd2a3f50f03d3bc5d05a39bbda85f4d8907041f48f1b8dc9\",\"dweb:/ipfs/QmQcoCLdbdTFh3seRtu5CuX1MKXP8RrD8SBXfGMuxWH3Wc\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b5061011d806100206000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806305c74dc114602d575b600080fd5b603360ab565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101560715780820151818401526020810190506058565b50505050905090810190601f168015609d5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60606040518060400160405280601881526020017f7361792048656c6c6f20746f2074686520436f6d70616e79000000000000000081525090509056fea265627a7a723158202441a0d4f625e2393a4919c835d8af1fafc97f43e2f432705f83378faf069c1564736f6c63430005100032",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806305c74dc114602d575b600080fd5b603360ab565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101560715780820151818401526020810190506058565b50505050905090810190601f168015609d5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60606040518060400160405280601881526020017f7361792048656c6c6f20746f2074686520436f6d70616e79000000000000000081525090509056fea265627a7a723158202441a0d4f625e2393a4919c835d8af1fafc97f43e2f432705f83378faf069c1564736f6c63430005100032",
-  "sourceMap": "217:227:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;217:227:1;;;;;;;",
-  "deployedSourceMap": "217:227:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;217:227:1;;;;;;;;;;;;;;;;;;;329:113;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;329:113:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;377:13;402:33;;;;;;;;;;;;;;;;;;;329:113;:::o",
-  "source": "pragma solidity >=0.4.21 <0.7.0;\n\n// how do we define roles between Company and Person\n// we should develop annotators to exchange data between Company and Person\n// If we can do this, first language will be created.\ncontract Company {\n    string _name;\n    string _legalFrom;\n    string _POBox;\n    string _addressCompany;\n\n    function sayCompanyHello() public pure returns (string memory) {\n        return \"say Hello to the Company\";\n    }\n}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"sayCompanyHello\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/orcunoruc/Desktop/Projects/Smart_Contract_Development/Role_Based_Contracts/contracts/Company.sol\":\"Company\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/orcunoruc/Desktop/Projects/Smart_Contract_Development/Role_Based_Contracts/contracts/Company.sol\":{\"keccak256\":\"0x0639071be81fd98c5a4ff8c1a7bb6e21445654c070b5815ddbabad1517ad8b71\",\"urls\":[\"bzz-raw://c06fe1d0ec8302d134fe0a4a5d874228bc91e8e15bf6b4d9975fe6e68613e737\",\"dweb:/ipfs/QmeM6NvHi56WntMsvaq6dTyfz5BLAmYS35dsGtPUkvqMt6\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061011d806100206000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806305c74dc114602d575b600080fd5b603360ab565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101560715780820151818401526020810190506058565b50505050905090810190601f168015609d5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60606040518060400160405280601881526020017f7361792048656c6c6f20746f2074686520436f6d70616e79000000000000000081525090509056fea265627a7a723158203ea337720be3b7e495afb2ffe62bf09674c6119c717d9131bfde08e23fe28b5964736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806305c74dc114602d575b600080fd5b603360ab565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101560715780820151818401526020810190506058565b50505050905090810190601f168015609d5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60606040518060400160405280601881526020017f7361792048656c6c6f20746f2074686520436f6d70616e79000000000000000081525090509056fea265627a7a723158203ea337720be3b7e495afb2ffe62bf09674c6119c717d9131bfde08e23fe28b5964736f6c63430005100032",
+  "sourceMap": "217:321:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;217:321:1;;;;;;;",
+  "deployedSourceMap": "217:321:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;217:321:1;;;;;;;;;;;;;;;;;;;423:113;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;423:113:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;471:13;496:33;;;;;;;;;;;;;;;;;;;423:113;:::o",
+  "source": "pragma solidity >=0.4.21 <0.7.0;\n\n// how do we define roles between Company and Person\n// we should develop annotators to exchange data between Company and Person\n// If we can do this, first language will be created.\ncontract Company {\n\n    struct companyData {\n        string _name;\n        string _legalFrom;\n        string _POBox;\n        string _addressCompany;\n\n    }\n\n    mapping(string => companyData) company;\n\n    function sayCompanyHello() public pure returns (string memory) {\n        return \"say Hello to the Company\";\n    }\n}",
   "sourcePath": "/Users/orcunoruc/Desktop/Projects/Smart_Contract_Development/Role_Based_Contracts/contracts/Company.sol",
   "ast": {
     "absolutePath": "/Users/orcunoruc/Desktop/Projects/Smart_Contract_Development/Role_Based_Contracts/contracts/Company.sol",
     "exportedSymbols": {
       "Company": [
-        52
+        57
       ]
     },
-    "id": 53,
+    "id": 58,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -54,112 +54,170 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 52,
+        "id": 57,
         "linearizedBaseContracts": [
-          52
+          57
         ],
         "name": "Company",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "constant": false,
-            "id": 37,
-            "name": "_name",
-            "nodeType": "VariableDeclaration",
-            "scope": 52,
-            "src": "240:12:1",
-            "stateVariable": true,
-            "storageLocation": "default",
-            "typeDescriptions": {
-              "typeIdentifier": "t_string_storage",
-              "typeString": "string"
-            },
-            "typeName": {
-              "id": 36,
-              "name": "string",
-              "nodeType": "ElementaryTypeName",
-              "src": "240:6:1",
-              "typeDescriptions": {
-                "typeIdentifier": "t_string_storage_ptr",
-                "typeString": "string"
+            "canonicalName": "Company.companyData",
+            "id": 44,
+            "members": [
+              {
+                "constant": false,
+                "id": 37,
+                "name": "_name",
+                "nodeType": "VariableDeclaration",
+                "scope": 44,
+                "src": "270:12:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 36,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "270:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 39,
+                "name": "_legalFrom",
+                "nodeType": "VariableDeclaration",
+                "scope": 44,
+                "src": "292:17:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 38,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "292:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 41,
+                "name": "_POBox",
+                "nodeType": "VariableDeclaration",
+                "scope": 44,
+                "src": "319:13:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 40,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "319:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 43,
+                "name": "_addressCompany",
+                "nodeType": "VariableDeclaration",
+                "scope": 44,
+                "src": "342:22:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 42,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "342:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
               }
-            },
-            "value": null,
-            "visibility": "internal"
+            ],
+            "name": "companyData",
+            "nodeType": "StructDefinition",
+            "scope": 57,
+            "src": "241:131:1",
+            "visibility": "public"
           },
           {
             "constant": false,
-            "id": 39,
-            "name": "_legalFrom",
+            "id": 48,
+            "name": "company",
             "nodeType": "VariableDeclaration",
-            "scope": 52,
-            "src": "258:17:1",
+            "scope": 57,
+            "src": "378:38:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_string_storage",
-              "typeString": "string"
+              "typeIdentifier": "t_mapping$_t_string_memory_$_t_struct$_companyData_$44_storage_$",
+              "typeString": "mapping(string => struct Company.companyData)"
             },
             "typeName": {
-              "id": 38,
-              "name": "string",
-              "nodeType": "ElementaryTypeName",
-              "src": "258:6:1",
+              "id": 47,
+              "keyType": {
+                "id": 45,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "386:6:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "378:30:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_string_storage_ptr",
-                "typeString": "string"
-              }
-            },
-            "value": null,
-            "visibility": "internal"
-          },
-          {
-            "constant": false,
-            "id": 41,
-            "name": "_POBox",
-            "nodeType": "VariableDeclaration",
-            "scope": 52,
-            "src": "281:13:1",
-            "stateVariable": true,
-            "storageLocation": "default",
-            "typeDescriptions": {
-              "typeIdentifier": "t_string_storage",
-              "typeString": "string"
-            },
-            "typeName": {
-              "id": 40,
-              "name": "string",
-              "nodeType": "ElementaryTypeName",
-              "src": "281:6:1",
-              "typeDescriptions": {
-                "typeIdentifier": "t_string_storage_ptr",
-                "typeString": "string"
-              }
-            },
-            "value": null,
-            "visibility": "internal"
-          },
-          {
-            "constant": false,
-            "id": 43,
-            "name": "_addressCompany",
-            "nodeType": "VariableDeclaration",
-            "scope": 52,
-            "src": "300:22:1",
-            "stateVariable": true,
-            "storageLocation": "default",
-            "typeDescriptions": {
-              "typeIdentifier": "t_string_storage",
-              "typeString": "string"
-            },
-            "typeName": {
-              "id": 42,
-              "name": "string",
-              "nodeType": "ElementaryTypeName",
-              "src": "300:6:1",
-              "typeDescriptions": {
-                "typeIdentifier": "t_string_storage_ptr",
-                "typeString": "string"
+                "typeIdentifier": "t_mapping$_t_string_memory_$_t_struct$_companyData_$44_storage_$",
+                "typeString": "mapping(string => struct Company.companyData)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 46,
+                "name": "companyData",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 44,
+                "src": "396:11:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_companyData_$44_storage_ptr",
+                  "typeString": "struct Company.companyData"
+                }
               }
             },
             "value": null,
@@ -167,22 +225,22 @@
           },
           {
             "body": {
-              "id": 50,
+              "id": 55,
               "nodeType": "Block",
-              "src": "392:50:1",
+              "src": "486:50:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "7361792048656c6c6f20746f2074686520436f6d70616e79",
-                    "id": 48,
+                    "id": 53,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "string",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "409:26:1",
+                    "src": "503:26:1",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_stringliteral_e93ee8930b961b2ed1a3d7af0c5b458ec1b7002a6785e7241e4d0e4c0cea21b4",
@@ -190,37 +248,37 @@
                     },
                     "value": "say Hello to the Company"
                   },
-                  "functionReturnParameters": 47,
-                  "id": 49,
+                  "functionReturnParameters": 52,
+                  "id": 54,
                   "nodeType": "Return",
-                  "src": "402:33:1"
+                  "src": "496:33:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 51,
+            "id": 56,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "sayCompanyHello",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 44,
+              "id": 49,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "353:2:1"
+              "src": "447:2:1"
             },
             "returnParameters": {
-              "id": 47,
+              "id": 52,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 46,
+                  "id": 51,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 51,
-                  "src": "377:13:1",
+                  "scope": 56,
+                  "src": "471:13:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -228,10 +286,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 45,
+                    "id": 50,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "377:6:1",
+                    "src": "471:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -241,29 +299,29 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "376:15:1"
+              "src": "470:15:1"
             },
-            "scope": 52,
-            "src": "329:113:1",
+            "scope": 57,
+            "src": "423:113:1",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 53,
-        "src": "217:227:1"
+        "scope": 58,
+        "src": "217:321:1"
       }
     ],
-    "src": "0:444:1"
+    "src": "0:538:1"
   },
   "legacyAST": {
     "absolutePath": "/Users/orcunoruc/Desktop/Projects/Smart_Contract_Development/Role_Based_Contracts/contracts/Company.sol",
     "exportedSymbols": {
       "Company": [
-        52
+        57
       ]
     },
-    "id": 53,
+    "id": 58,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -286,112 +344,170 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 52,
+        "id": 57,
         "linearizedBaseContracts": [
-          52
+          57
         ],
         "name": "Company",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "constant": false,
-            "id": 37,
-            "name": "_name",
-            "nodeType": "VariableDeclaration",
-            "scope": 52,
-            "src": "240:12:1",
-            "stateVariable": true,
-            "storageLocation": "default",
-            "typeDescriptions": {
-              "typeIdentifier": "t_string_storage",
-              "typeString": "string"
-            },
-            "typeName": {
-              "id": 36,
-              "name": "string",
-              "nodeType": "ElementaryTypeName",
-              "src": "240:6:1",
-              "typeDescriptions": {
-                "typeIdentifier": "t_string_storage_ptr",
-                "typeString": "string"
+            "canonicalName": "Company.companyData",
+            "id": 44,
+            "members": [
+              {
+                "constant": false,
+                "id": 37,
+                "name": "_name",
+                "nodeType": "VariableDeclaration",
+                "scope": 44,
+                "src": "270:12:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 36,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "270:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 39,
+                "name": "_legalFrom",
+                "nodeType": "VariableDeclaration",
+                "scope": 44,
+                "src": "292:17:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 38,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "292:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 41,
+                "name": "_POBox",
+                "nodeType": "VariableDeclaration",
+                "scope": 44,
+                "src": "319:13:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 40,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "319:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 43,
+                "name": "_addressCompany",
+                "nodeType": "VariableDeclaration",
+                "scope": 44,
+                "src": "342:22:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 42,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "342:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
               }
-            },
-            "value": null,
-            "visibility": "internal"
+            ],
+            "name": "companyData",
+            "nodeType": "StructDefinition",
+            "scope": 57,
+            "src": "241:131:1",
+            "visibility": "public"
           },
           {
             "constant": false,
-            "id": 39,
-            "name": "_legalFrom",
+            "id": 48,
+            "name": "company",
             "nodeType": "VariableDeclaration",
-            "scope": 52,
-            "src": "258:17:1",
+            "scope": 57,
+            "src": "378:38:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_string_storage",
-              "typeString": "string"
+              "typeIdentifier": "t_mapping$_t_string_memory_$_t_struct$_companyData_$44_storage_$",
+              "typeString": "mapping(string => struct Company.companyData)"
             },
             "typeName": {
-              "id": 38,
-              "name": "string",
-              "nodeType": "ElementaryTypeName",
-              "src": "258:6:1",
+              "id": 47,
+              "keyType": {
+                "id": 45,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "386:6:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "378:30:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_string_storage_ptr",
-                "typeString": "string"
-              }
-            },
-            "value": null,
-            "visibility": "internal"
-          },
-          {
-            "constant": false,
-            "id": 41,
-            "name": "_POBox",
-            "nodeType": "VariableDeclaration",
-            "scope": 52,
-            "src": "281:13:1",
-            "stateVariable": true,
-            "storageLocation": "default",
-            "typeDescriptions": {
-              "typeIdentifier": "t_string_storage",
-              "typeString": "string"
-            },
-            "typeName": {
-              "id": 40,
-              "name": "string",
-              "nodeType": "ElementaryTypeName",
-              "src": "281:6:1",
-              "typeDescriptions": {
-                "typeIdentifier": "t_string_storage_ptr",
-                "typeString": "string"
-              }
-            },
-            "value": null,
-            "visibility": "internal"
-          },
-          {
-            "constant": false,
-            "id": 43,
-            "name": "_addressCompany",
-            "nodeType": "VariableDeclaration",
-            "scope": 52,
-            "src": "300:22:1",
-            "stateVariable": true,
-            "storageLocation": "default",
-            "typeDescriptions": {
-              "typeIdentifier": "t_string_storage",
-              "typeString": "string"
-            },
-            "typeName": {
-              "id": 42,
-              "name": "string",
-              "nodeType": "ElementaryTypeName",
-              "src": "300:6:1",
-              "typeDescriptions": {
-                "typeIdentifier": "t_string_storage_ptr",
-                "typeString": "string"
+                "typeIdentifier": "t_mapping$_t_string_memory_$_t_struct$_companyData_$44_storage_$",
+                "typeString": "mapping(string => struct Company.companyData)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 46,
+                "name": "companyData",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 44,
+                "src": "396:11:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_companyData_$44_storage_ptr",
+                  "typeString": "struct Company.companyData"
+                }
               }
             },
             "value": null,
@@ -399,22 +515,22 @@
           },
           {
             "body": {
-              "id": 50,
+              "id": 55,
               "nodeType": "Block",
-              "src": "392:50:1",
+              "src": "486:50:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "7361792048656c6c6f20746f2074686520436f6d70616e79",
-                    "id": 48,
+                    "id": 53,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "string",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "409:26:1",
+                    "src": "503:26:1",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_stringliteral_e93ee8930b961b2ed1a3d7af0c5b458ec1b7002a6785e7241e4d0e4c0cea21b4",
@@ -422,37 +538,37 @@
                     },
                     "value": "say Hello to the Company"
                   },
-                  "functionReturnParameters": 47,
-                  "id": 49,
+                  "functionReturnParameters": 52,
+                  "id": 54,
                   "nodeType": "Return",
-                  "src": "402:33:1"
+                  "src": "496:33:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 51,
+            "id": 56,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "sayCompanyHello",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 44,
+              "id": 49,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "353:2:1"
+              "src": "447:2:1"
             },
             "returnParameters": {
-              "id": 47,
+              "id": 52,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 46,
+                  "id": 51,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 51,
-                  "src": "377:13:1",
+                  "scope": 56,
+                  "src": "471:13:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -460,10 +576,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 45,
+                    "id": 50,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "377:6:1",
+                    "src": "471:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -473,20 +589,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "376:15:1"
+              "src": "470:15:1"
             },
-            "scope": 52,
-            "src": "329:113:1",
+            "scope": 57,
+            "src": "423:113:1",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 53,
-        "src": "217:227:1"
+        "scope": 58,
+        "src": "217:321:1"
       }
     ],
-    "src": "0:444:1"
+    "src": "0:538:1"
   },
   "compiler": {
     "name": "solc",
@@ -501,7 +617,7 @@
     }
   },
   "schemaVersion": "3.0.22",
-  "updatedAt": "2020-02-24T15:42:03.115Z",
+  "updatedAt": "2020-05-07T09:32:50.369Z",
   "devdoc": {
     "methods": {}
   },

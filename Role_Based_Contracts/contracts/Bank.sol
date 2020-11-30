@@ -1,7 +1,8 @@
 pragma solidity >=0.4.21 <0.7.0;
 
 contract Bank {
-    struct ROLES {
+    struct ROLES 
+    {
         string Customer;
         string Consultant;
         string BankAccounts; // how do we define one - to -one relationship in object oriented language.
@@ -10,12 +11,14 @@ contract Bank {
 
     string _name; //for banking name
 
-    function login (uint id, uint cred) public  view returns (bool) {
+    function login (uint id, uint cred) public pure returns (bool) 
+    {
         // fill it up
         return false;
     }
 
-    function executeTransactions() public view returns (bool){
+    function executeTransactions() public pure returns (bool)
+    {
         //true or false;
         return false;
     }
