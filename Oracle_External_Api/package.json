@@ -1,0 +1,24 @@
+{
+  "name": "oracle_external_api",
+  "version": "1.0.0",
+  "description": "A sample for Oracle Contract",
+  "main": "client.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "fetch": "^1.1.0",
+    "truffle-contract": "^3.0.1",
+    "web3": "1.3.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Solidity",
+    "Development"
+  ],
+  "author": "Orcun Oruc",
+  "license": "MIT"
+}
