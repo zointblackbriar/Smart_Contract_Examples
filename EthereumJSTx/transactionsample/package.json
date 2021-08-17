@@ -1,0 +1,22 @@
+{
+  "name": "ethereumjstx",
+  "version": "1.0.0",
+  "description": "EthereumJS-Transaction test",
+  "main": "ethereumjsInitial.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node app.js"
+  },
+  "keywords": [
+    "Ethereum",
+    "Blockchain"
+  ],
+  "author": "Orcun Oruc",
+  "license": "MIT",
+  "dependencies": {
+    "@ethereumjs/tx": "^3.3.0",
+    "ethereumjs-tx": "^2.1.2",
+    "hooked-web3-provider": "^1.0.0",
+    "web3": "^0.15.1"
+  }
+}
