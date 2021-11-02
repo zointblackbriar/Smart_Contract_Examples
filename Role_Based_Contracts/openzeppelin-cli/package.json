@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@openzeppelin/cli": "^2.8.2",
+    "@openzeppelin/contracts": "^4.3.2"
+  },
+  "name": "openzeppelin-cli",
+  "version": "1.0.0",
+  "description": "Openzeppelin application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Openzeppelin",
+    "Solidity"
+  ],
+  "author": "Orcun Oruc",
+  "license": "MIT"
+}
