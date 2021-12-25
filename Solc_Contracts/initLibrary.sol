@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity >=0.4.0 <=0.7.0;
+pragma solidity ^0.8.0;
 
 library GetCode {
 	function at(address _addr) public view returns (bytes memory opcodes){
