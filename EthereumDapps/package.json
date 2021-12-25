@@ -1,0 +1,23 @@
+{
+  "name": "ethereumdapps",
+  "version": "1.0.0",
+  "description": "Ethereum test with Web3js",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "Ethereum",
+    "Webj"
+  ],
+  "author": "Orcun Oruc",
+  "license": "MIT",
+  "dependencies": {
+    "solc": "^0.8.10",
+    "web3": "^1.6.1"
+  }
+}
