@@ -20,3 +20,8 @@ npx hardhat help
 ```bash
 npx hardhat run scripts/sample-script.js
 ```
+
+#### Important note 
+
+You need to add your own configuration with config.js
+
