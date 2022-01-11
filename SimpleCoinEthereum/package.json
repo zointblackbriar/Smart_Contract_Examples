@@ -1,0 +1,21 @@
+{
+  "name": "simplecoinethereum",
+  "version": "1.0.0",
+  "description": "Simple Coin Transfer with Ethereum",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mocha" : "mocha dummytest.js"
+  },
+  "keywords": [
+    "Ethereum",
+    "Blockchain",
+    "Smart",
+    "Contracts"
+  ],
+  "author": "Orcun Oruc",
+  "license": "MIT",
+  "dependencies": {
+    "assert": "^2.0.0"
+  }
+}
