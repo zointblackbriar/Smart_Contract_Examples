@@ -31,7 +31,7 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\n// they cannot inherit from other smart contracts\n// they can only inherit from other interfaces\n\n// They cannot declare a constructor\n// They cannot declare state variables\n// all declared functions have to be external\n\ninterface IFaucet {\n  function addFunds() external payable;\n  function withdraw(uint withdrawAmount) external;\n}\n",
-  "sourcePath": "/Users/filipjerga/blockchain/faucet/contracts/IFaucet.sol",
+  "sourcePath": "/Users/orcunoruc/Desktop/Projects/zointblackbriar/Smart_Contract_Development/faucet-course/contracts/IFaucet.sol",
   "ast": {
     "absolutePath": "project:/contracts/IFaucet.sol",
     "exportedSymbols": {
@@ -296,7 +296,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-08-25T08:25:28.777Z",
+  "updatedAt": "2021-12-25T22:23:44.772Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
