@@ -1,6 +1,7 @@
 package de.tudresden.algorandjava;
 import com.algorand.algosdk.account.Account;
 import com.algorand.algosdk.v2.client.common.AlgodClient;
+import com.algorand.algosdk.v2.client.model.NodeStatusResponse;
 import com.algorand.algosdk.v2.client.model.PendingTransactionResponse;
 import com.algorand.algosdk.v2.client.common.Response;
 
@@ -42,13 +43,20 @@ public class AlgorandConnection {
         return client;
     }
 
-    private PendingTransactionResponse waitForConfirmation() {
+    private PendingTransactionResponse waitForConfirmation(AlgodClient algodClient, String transactionID, Integer timeout) throws Exception{
+        if(algodClient == null || transactionID == null || timeout < 0) {
+            throw new IllegalArgumentException("Bad arguments have been provided");
+        }
+        Response <NodeStatusResponse> response = algodClient.GetStatus().execute();
+        if(!response.isSuccessful()) {
+            throw new Exception(response.message());
+        }
         return null; 
     }
 
     private String showBalance(com.algorand.algosdk.account.Account myAccount) throws Exception {
         String myAddress = myAccount.getAddress().toString();
-        Response < com.algorand.algosdk.v2.client.model.Account > responseAccount = commonClient.AccountInformation(myAccount.getAddress()).execute();
+        Response < com.algorand.algosdk.v2.client.model.Account > responseAccount = commonClient.AccountInformation(myAccount.getAddress()).execute();        
         return myAddress;
     }
     
