@@ -85,7 +85,7 @@ class RetailerClient extends Component {
                     this.retailerContract_recieveItem(parseInt(eventLogs.args.idOrder.toString()));
                 }
             }
-        })
+        });
     }
 
     supplierContract_getItem(idItem) {

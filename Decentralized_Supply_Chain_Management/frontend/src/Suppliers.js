@@ -38,7 +38,7 @@ class SuppliersClient extends Component {
 
         /* transactions */
         this.supplierContract_addItem = this.supplierContract_addItem.bind(this);
-        this.supplierContract_processOrder = this.supplierContract_processOrder.bind(this);
+        // this.supplierContract_processOrder = this.supplierContract_processOrder.bind(this);
         this.retailerContract_recieveItem = this.retailerContract_recieveItem.bind(this);
 
         this.triggerSupplierContractEventListeners = this.triggerSupplierContractEventListeners.bind(this);
@@ -207,7 +207,7 @@ class SuppliersClient extends Component {
                                                     {orderId}
                                                     </td>
                                                     <td>
-                                                    Orçun Oruç
+                                                    Customer A
                                                     </td>
                                                     <td>
                                                     {orderedItemName}
@@ -237,7 +237,7 @@ class SuppliersClient extends Component {
                                                         {po.idOrder}
                                                         </td>
                                                         <td>
-                                                        Orçun Oruç
+                                                        Customer A
                                                         </td>
                                                         <td>
                                                         {po.status === true ? 'Completed' : 'InProgress'}

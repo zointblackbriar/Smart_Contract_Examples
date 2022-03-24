@@ -59,3 +59,26 @@ Accordingly, our application is ready to go.
 ## Acknowledgments
 
 * Give the main repository reference
+
+
+### Important information
+
+Link your contracts from the /backend folder with the following command: 
+
+(Windows version. Under the frontend folder)
+```bash 
+ mklink /D \src\ ..\..\backend\build\contracts
+ ``` 
+
+
+ (Linux and MacOS version. Under the frontend folder. Under the src/ folder of React application)
+ ```bash
+ cd frontend/src/
+ ln -s ../backend/build/ build
+ ```
+
+ ### Install extra package
+
+ ```bash
+ npm install next@10.0.7
+ ``` 
