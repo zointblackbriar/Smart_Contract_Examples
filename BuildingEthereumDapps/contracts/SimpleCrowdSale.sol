@@ -1,6 +1,11 @@
 //"SPDX-License-Identifier: MIT"
 pragma solidity ^0.8.4; 
 
+
+//@title A simulator for tree
+//@author zoint
+//@notice You can use this for development purpose
+//@dev All functions were not tested    
 contract SimpleCrowdSale {
     mapping (address => uint256) public coinBalanceMapping; 
     mapping (address => mapping(address => uint256)) public allowanceMapping;
