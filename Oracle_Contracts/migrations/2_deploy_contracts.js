@@ -1,6 +1,6 @@
-var BoxingBets = artifacts.require("BoxingBets.sol");
+var OracleContract = artifacts.require("OracleContract.sol");
 
 module.exports = function(deployer)
 {
-    deployer.deploy(BoxingBets);
+    deployer.deploy(OracleContract);
 }

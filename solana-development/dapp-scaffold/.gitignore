@@ -25,3 +25,6 @@ yarn-error.log*
 .idea
 
 /test-ledger
+
+# eliminating the package-lock.json file
+package-lock.json
