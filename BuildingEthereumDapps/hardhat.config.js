@@ -1,4 +1,5 @@
 require("@nomiclabs/hardhat-waffle");
+require('@nomiclabs/hardhat-truffle5');
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
@@ -32,6 +33,12 @@ module.exports = {
       forking: {
         url: "https://eth-ropsten.alchemyapi.io/v2/nmDHfxR_yoF00D3ZwH_Y6bFc5Jate7gF"
       }
+    },
+    localhost: {
+      url: "http://127.0.0.1:8545"
+    },
+    hardhat: {
+      
     }
   }
 };

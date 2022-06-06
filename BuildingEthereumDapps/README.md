@@ -10,6 +10,12 @@ npx hardhat compile
 npx hardhat clean
 npx hardhat test
 npx hardhat node
-node scripts/sample-script.js
+npx hardhat run scripts/sample-script.js
 npx hardhat help
+```
+
+### INSTALL HARDHAT TRUFFLE
+
+```bash
+npm install --save-dev @nomiclabs/hardhat-truffle5 @nomiclabs/hardhat-web3 web3
 ```
