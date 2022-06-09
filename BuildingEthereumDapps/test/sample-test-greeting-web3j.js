@@ -146,3 +146,26 @@ describe("getOwner()", () => {
         assert.equal(ownerAddress, expectedAddress, "adress were matched in contract call.");
     });
 });
+
+describe("when message is sent by another account", () => {
+    let accounts;
+    before(async function() {
+        accounts = web3.eth.getAccounts();
+    });
+    it("does not set the greeting", async() => {
+        const greeterObject = await GreeterContract.new("greeting message"); 
+        // const expected = await greeterObject.getGreeting();
+
+        try {
+            await greeterObject.setGreeting("Not the owner", {from: accounts[1]}); 
+            console.log(greeterObject.getOwner()); 
+            console.log(accounts[1]);
+            assert.notEqual(greeterObject.getOwner(), accounts[1]);
+            // assert(false, "greeting should not update because of the ownership principle");
+        } catch(err) {
+            const errorMessage = "Ownable: caller is not the owner";
+            assert.equal(err.reason, errorMessage, "greeting should not update");
+            return;
+        }
+    });
+});
