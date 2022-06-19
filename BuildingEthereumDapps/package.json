@@ -44,6 +44,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
-
+  ],
+  "dependencies": {
+    "openzeppelin-solidity": "^4.6.0"
+  }
 }

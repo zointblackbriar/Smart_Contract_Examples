@@ -2,6 +2,7 @@ const { assert } = require("chai");
 const { contract, web3 } = require("hardhat");
 
 const GreeterContract = artifacts.require("Greeter"); 
+const SimpleCoin = artifacts.require("SimpleCoin");
 
 contract("Greeter", (accounts) => {
     it("Should return a new greeting instance once it is changed", async function() {
@@ -157,7 +158,7 @@ describe("when message is sent by another account", () => {
         // const expected = await greeterObject.getGreeting();
 
         try {
-            await greeterObject.setGreeting("Not the owner", {from: accounts[1]}); 
+            await greeterObject.setGreeting("Not the owner", {from: accounts[0]}); 
             console.log(greeterObject.getOwner()); 
             console.log(accounts[1]);
             assert.notEqual(greeterObject.getOwner(), accounts[1]);
@@ -169,3 +170,22 @@ describe("when message is sent by another account", () => {
         }
     });
 });
+
+describe("SimpleCoin Contract", () => {
+    let accounts; 
+    before(async function() {
+        accounts = web3.eth.getAccounts();
+    }); 
+
+    it("transfer action is completed or not", async() => {
+        const simpleCoinContractObject = await SimpleCoin.new();
+        try {
+            assert.isTrue(simpleCoinContractObject.transfer(accounts[0], 12));
+        } catch(err) 
+        {
+            const errorMessage = "Problem with the transaction"; 
+            assert.equal(err.reason, errorMessage, "SimpleCoin contract failed");
+            return;
+        }
+    })
+}); 
