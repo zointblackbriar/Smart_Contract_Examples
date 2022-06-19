@@ -17,7 +17,6 @@
     "hardhat": "^2.8.0",
     "web3": "^1.7.3",
     "@material-ui/core": "^4.3.1",
-    "@openzeppelin/contracts": "^2.3.0",
     "bootstrap": "^4.3.1",
     "cryptocompare": "^1.0.0",
     "get-eth-price": "^1.0.0",
@@ -28,7 +27,8 @@
     "react-redux": "^7.1.1",
     "react-router-dom": "^5.0.1",
     "react-scripts": "2.1.1",
-    "redux": "^4.0.4"
+    "redux": "^4.0.4",
+    "@openzeppelin/contracts": "^4.6.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -44,8 +44,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "dependencies": {
-    "openzeppelin-solidity": "^4.6.0"
-  }
+  ]
 }
