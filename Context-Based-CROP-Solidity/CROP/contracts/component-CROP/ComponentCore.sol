@@ -7,7 +7,7 @@ import "./InterfaceIds.sol";
 import "../ERC165/ERC165Query.sol";
 
 contract ComponentCore is Component, ERC165Query {
-
+    event Logging(string description, string value);
     mapping(bytes32 => ComponentRole) internal playedRoles;
 
     Team internal activeTeam;
@@ -35,8 +35,8 @@ contract ComponentCore is Component, ERC165Query {
 
         bool isComponentRole = doesContractImplementInterface(role, InterfaceIds.COMPONENT_ROLE_ID);
         require(isComponentRole, "Doesn't support ComponentRole interface.");
-
         ComponentRole componentRole = ComponentRole(role);
+        emit Logging("addRole", string(abi.encodePacked(componentRole)));
         playedRoles[spec] = componentRole;
         componentRole.setCore(address(this));
     }

@@ -8,9 +8,12 @@ import "../contracts/component-CROP/InterfaceIds.sol";
 contract TestComponentCore_ERC165 {
 
     ComponentCore internal component = new ComponentCore();
+    event Logging(string sampleResult, bool param);
+
 
     function testSupportsErc165() public {
         Assert.isTrue(component.supportsInterface(0x01ffc9a7), "");
+        emit Logging("testSupportsErc165", component.supportsInterface(0x01ffc9a7));
     }
 
     function testSupportsComponentInterface() public {

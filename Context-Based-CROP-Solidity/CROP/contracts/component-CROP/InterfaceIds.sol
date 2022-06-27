@@ -6,7 +6,9 @@ import "./ComponentRole.sol";
 import "./Team.sol";
 
 library InterfaceIds {
+
     bytes4 constant COMPONENT_ID = type(Component).interfaceId;
     bytes4 constant COMPONENT_ROLE_ID = type(ComponentRole).interfaceId;
     bytes4 constant TEAM_ID = type(Team).interfaceId;
+
 }

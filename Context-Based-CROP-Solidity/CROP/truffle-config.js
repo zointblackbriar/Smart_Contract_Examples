@@ -35,10 +35,13 @@ module.exports = {
    */
 
   description: 'Test Configuration',
-    // test_directory: 'javascripttests',
-    test_directory: 'soliditytests',
+    test_directory: 'mochatests',
+    //test_directory: 'contracts/soliditytests',
     migrations_directory: 'migrations',
+    contracts_build_directory: 'build/contracts',
 
+  // contracts: {
+  //   },
   networks: {
     // Useful for testing. The `development` name is special - truffle uses it by default
     // if it's defined here and no other network is specified at the command line.

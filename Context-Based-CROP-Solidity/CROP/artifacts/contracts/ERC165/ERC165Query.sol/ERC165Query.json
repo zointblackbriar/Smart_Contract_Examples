@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ERC165Query",
+  "sourceName": "contracts/ERC165/ERC165Query.sol",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220aa7d21cfd16b1f2b5f1b25e07e86c9efa436dc9bb182eb9480cbe0c136a1d8b264736f6c63430008070033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220aa7d21cfd16b1f2b5f1b25e07e86c9efa436dc9bb182eb9480cbe0c136a1d8b264736f6c63430008070033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
