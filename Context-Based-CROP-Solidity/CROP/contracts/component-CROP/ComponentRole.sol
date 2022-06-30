@@ -21,6 +21,7 @@ abstract contract ComponentRole is Component, ERC165Query {
     ///  uses less than 30,000 gas.
     /// @return `true` if the contract implements `interfaceID` and
     ///  `interfaceID` is not 0xffffffff, `false` otherwise
+    /// type of the return must be ABI.encodePacked() unpadded type
     function supportsInterface(bytes4 interfaceID) external override pure returns (bool) {
         return interfaceID == 0x01ffc9a7                      // ERC165
             || interfaceID == InterfaceIds.COMPONENT_ROLE_ID; // ComponentRole

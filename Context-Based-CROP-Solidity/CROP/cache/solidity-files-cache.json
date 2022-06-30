@@ -1,0 +1,310 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/media/zoint/D0F4-36FA/AllFiles/Projeler/zointblackbriar/Smart_Contract_Examples/Context-Based-CROP-Solidity/CROP/contracts/component-CROP/Component.sol": {
+      "lastModificationDate": 1656248200934,
+      "contentHash": "ec81ae1c3b4052fead0e063ac8b31e53",
+      "sourceName": "contracts/component-CROP/Component.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC165/ERC165.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "Component"
+      ]
+    },
+    "/media/zoint/D0F4-36FA/AllFiles/Projeler/zointblackbriar/Smart_Contract_Examples/Context-Based-CROP-Solidity/CROP/contracts/ERC165/ERC165.sol": {
+      "lastModificationDate": 1656248200934,
+      "contentHash": "6fdaefa21c8f6f5aa1a8367d5b5ef01e",
+      "sourceName": "contracts/ERC165/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/media/zoint/D0F4-36FA/AllFiles/Projeler/zointblackbriar/Smart_Contract_Examples/Context-Based-CROP-Solidity/CROP/contracts/component-CROP/InterfaceIds.sol": {
+      "lastModificationDate": 1656269498067,
+      "contentHash": "c5ac0995a88b836e344ec25380ec9d4c",
+      "sourceName": "contracts/component-CROP/InterfaceIds.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Component.sol",
+        "./ComponentRole.sol",
+        "./Team.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "InterfaceIds"
+      ]
+    },
+    "/media/zoint/D0F4-36FA/AllFiles/Projeler/zointblackbriar/Smart_Contract_Examples/Context-Based-CROP-Solidity/CROP/contracts/component-CROP/ComponentRole.sol": {
+      "lastModificationDate": 1656268650151,
+      "contentHash": "150bc62f90129910f9934c7f7bcfd9ce",
+      "sourceName": "contracts/component-CROP/ComponentRole.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Component.sol",
+        "./ComponentCore.sol",
+        "./Team.sol",
+        "./InterfaceIds.sol",
+        "../ERC165/ERC165Query.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "ComponentRole"
+      ]
+    },
+    "/media/zoint/D0F4-36FA/AllFiles/Projeler/zointblackbriar/Smart_Contract_Examples/Context-Based-CROP-Solidity/CROP/contracts/component-CROP/Team.sol": {
+      "lastModificationDate": 1656248200935,
+      "contentHash": "4e9497e6e497519c94070db210d5992e",
+      "sourceName": "contracts/component-CROP/Team.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ComponentRole.sol",
+        "./RoleCreator.sol",
+        "./InterfaceIds.sol",
+        "../ERC165/ERC165.sol",
+        "../ERC165/ERC165Query.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "Team"
+      ]
+    },
+    "/media/zoint/D0F4-36FA/AllFiles/Projeler/zointblackbriar/Smart_Contract_Examples/Context-Based-CROP-Solidity/CROP/contracts/component-CROP/ComponentCore.sol": {
+      "lastModificationDate": 1656271274260,
+      "contentHash": "09a5692789177472439ad2fd7201c37a",
+      "sourceName": "contracts/component-CROP/ComponentCore.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Component.sol",
+        "./ComponentRole.sol",
+        "./InterfaceIds.sol",
+        "../ERC165/ERC165Query.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "ComponentCore"
+      ]
+    },
+    "/media/zoint/D0F4-36FA/AllFiles/Projeler/zointblackbriar/Smart_Contract_Examples/Context-Based-CROP-Solidity/CROP/contracts/ERC165/ERC165Query.sol": {
+      "lastModificationDate": 1656248200934,
+      "contentHash": "b4adef03e223c5de513311cd4609f998",
+      "sourceName": "contracts/ERC165/ERC165Query.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "ERC165Query"
+      ]
+    },
+    "/media/zoint/D0F4-36FA/AllFiles/Projeler/zointblackbriar/Smart_Contract_Examples/Context-Based-CROP-Solidity/CROP/contracts/component-CROP/RoleCreator.sol": {
+      "lastModificationDate": 1656248200935,
+      "contentHash": "b1c193a4a8765ef6a298b93bee9d9d27",
+      "sourceName": "contracts/component-CROP/RoleCreator.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ComponentRole.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "RoleCreator"
+      ]
+    }
+  }
+}
