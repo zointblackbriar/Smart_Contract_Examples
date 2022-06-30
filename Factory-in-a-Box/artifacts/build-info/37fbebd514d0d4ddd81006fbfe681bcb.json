@@ -1,0 +1,112 @@
+{
+  "id": "37fbebd514d0d4ddd81006fbfe681bcb",
+  "_format": "hh-sol-build-info-1",
+  "solcVersion": "0.8.7",
+  "solcLongVersion": "0.8.7+commit.e28d00a7",
+  "input": {
+    "language": "Solidity",
+    "sources": {
+      "contracts/CellConfiguratorController.sol": {
+        "content": "//SPDX-License-Identifier: MIT\npragma solidity >=0.8.7; \n\ncontract CellConfiguratorController {\n    \n}"
+      }
+    },
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  "output": {
+    "contracts": {
+      "contracts/CellConfiguratorController.sol": {
+        "CellConfiguratorController": {
+          "abi": [],
+          "evm": {
+            "bytecode": {
+              "functionDebugData": {},
+              "generatedSources": [],
+              "linkReferences": {},
+              "object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220d7f6dec8d486b0602013a778df0dbe43ec7c4943acbbaeb5c34b485ce3b74e7d64736f6c63430008070033",
+              "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xD7 0xF6 0xDE 0xC8 0xD4 DUP7 0xB0 PUSH1 0x20 SGT 0xA7 PUSH25 0xDF0DBE43EC7C4943ACBBAEB5C34B485CE3B74E7D64736F6C63 NUMBER STOP ADDMOD SMOD STOP CALLER ",
+              "sourceMap": "58:44:0:-:0;;;;;;;;;;;;;;;;;;;"
+            },
+            "deployedBytecode": {
+              "functionDebugData": {},
+              "generatedSources": [],
+              "immutableReferences": {},
+              "linkReferences": {},
+              "object": "6080604052600080fdfea2646970667358221220d7f6dec8d486b0602013a778df0dbe43ec7c4943acbbaeb5c34b485ce3b74e7d64736f6c63430008070033",
+              "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xD7 0xF6 0xDE 0xC8 0xD4 DUP7 0xB0 PUSH1 0x20 SGT 0xA7 PUSH25 0xDF0DBE43EC7C4943ACBBAEB5C34B485CE3B74E7D64736F6C63 NUMBER STOP ADDMOD SMOD STOP CALLER ",
+              "sourceMap": "58:44:0:-:0;;;;;"
+            },
+            "methodIdentifiers": {}
+          },
+          "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/CellConfiguratorController.sol\":\"CellConfiguratorController\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/CellConfiguratorController.sol\":{\"keccak256\":\"0x7047b7b47461213bc3fc409eb335478da324f7a8e1a257afe61282ea5844a3ca\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7119ef51f5d393a621aa4fe30860c9b9517e9f854097dcefaa5edcb1be4aabe8\",\"dweb:/ipfs/Qmd365Df41zAu9c5GVJPjFUciYUUF7k54EvBNFVXMFfnHX\"]}},\"version\":1}"
+        }
+      }
+    },
+    "sources": {
+      "contracts/CellConfiguratorController.sol": {
+        "ast": {
+          "absolutePath": "contracts/CellConfiguratorController.sol",
+          "exportedSymbols": {
+            "CellConfiguratorController": [
+              2
+            ]
+          },
+          "id": 3,
+          "license": "MIT",
+          "nodeType": "SourceUnit",
+          "nodes": [
+            {
+              "id": 1,
+              "literals": [
+                "solidity",
+                ">=",
+                "0.8",
+                ".7"
+              ],
+              "nodeType": "PragmaDirective",
+              "src": "31:24:0"
+            },
+            {
+              "abstract": false,
+              "baseContracts": [],
+              "contractDependencies": [],
+              "contractKind": "contract",
+              "fullyImplemented": true,
+              "id": 2,
+              "linearizedBaseContracts": [
+                2
+              ],
+              "name": "CellConfiguratorController",
+              "nameLocation": "67:26:0",
+              "nodeType": "ContractDefinition",
+              "nodes": [],
+              "scope": 3,
+              "src": "58:44:0",
+              "usedErrors": []
+            }
+          ],
+          "src": "31:71:0"
+        },
+        "id": 0
+      }
+    }
+  }
+}

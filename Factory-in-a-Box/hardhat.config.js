@@ -1,5 +1,7 @@
 require("@nomiclabs/hardhat-waffle");
 require('@nomiclabs/hardhat-truffle5');
+require('dotenv').config()
+// console.log(process.env)
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
@@ -30,15 +32,19 @@ module.exports = {
 
   networks:  {
     hardhat: {
-      forking: {
-        url: "https://eth-ropsten.alchemyapi.io/v2/nmDHfxR_yoF00D3ZwH_Y6bFc5Jate7gF"
-      }
+    },
+    goerli: {
+      url: process.env.ALCHEMY_MAINNET_RPC_URL,
     },
     localhost: {
       url: "http://127.0.0.1:8545"
     },
-    hardhat: {
-      
-    }
+    paths: {
+      sources: './contracts',
+      tests: './hardhattest',
+      url: 'http://127.0.0.1:8545',
+      cache: './cache',
+      artifacts: './artifacts',
+    },
   }
 };
