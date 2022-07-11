@@ -14,6 +14,13 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.web3j/core -->
+    <dependency>
+        <groupId>org.web3j</groupId>
+        <artifactId>core</artifactId>
+        <version>5.0.0</version>
+    </dependency>
+
   </dependencies>
 
   <properties>
@@ -26,33 +33,39 @@
   <build>
     <plugins>
         <plugin>
-            <groupId>org.web3j</groupId>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>3.0.0</version>
+            <configuration>
+                <mainClass>de.tudresden.CROP.javaapplication.App</mainClass>
+            </configuration>
+        </plugin>
+        <plugin>
+            <groupId>com.github.longdt</groupId>
             <artifactId>web3j-maven-plugin</artifactId>
-            <version>4.8.7</version>
-            <executions>
-                <execution>
-                    <id>generate-sources-web3j</id>
-                    <phase>generate-sources</phase>
-                    <goals>
-                        <goal>generate-sources</goal>
-                    </goals>
-                    <configuration>
-                        <packageName>de.tudresden.cropcode.javaapplication</packageName>
-                       <sourceDestination>src/main/java</sourceDestination>
-                        <soliditySourceFiles>
-                            <directory>sampletest</directory>
-                            <includes>
-                                <include>**/*.sol</include>
-                            </includes>
-                        </soliditySourceFiles>
-                        <!-- <outputDirectory>
-                          <java></java>
-                          <abi></abi>
-                          <bin></bin>
-                        </outputDirectory> -->
-                    </configuration>
-                </execution>
-            </executions>
+            <version>4.8.10</version>
+            <configuration>
+                <packageName>de.tudresden.cropcode.javaapplication</packageName>
+                <sourceDestination>src/main/java</sourceDestination>
+                <soliditySourceFiles>
+                    <directory>contracts/contracts</directory>
+                    <includes>
+                        <include>**/*.sol</include>
+                    </includes>
+                </soliditySourceFiles>
+                <!--<abiSourceFiles>
+                    <directory>contracts/build/contracts</directory>
+                    <includes>
+                        <include>**/*.json</include>
+                    </includes>
+                </abiSourceFiles>-->
+                <outputDirectory>
+                    <java></java>
+                    <abi></abi>
+                    <bin></bin>
+                </outputDirectory>
+                <packageName>de.tudresden.contractsample.connection</packageName>
+            </configuration>
         </plugin>
 
        <!-- <plugin>

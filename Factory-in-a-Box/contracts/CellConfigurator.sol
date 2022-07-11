@@ -3,9 +3,12 @@ pragma solidity >=0.8.7;
 
 
 contract CellConfigurator {
+    //Each participant should have unique Id in the network. 
     string public companyName; 
     string  public companyId; 
     bool public isProductionEnvLeased; 
+    string public serviceProviderID; //public key of service provider ID
+    string public machineID; //public key of machine asset
     address owner; 
     mapping(address => uint) balance; 
 

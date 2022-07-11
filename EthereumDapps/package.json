@@ -17,6 +17,7 @@
   "author": "Orcun Oruc",
   "license": "MIT",
   "dependencies": {
+    "@openzeppelin/contracts": "^4.7.0",
     "solc": "^0.8.10",
     "web3": "^1.6.1"
   }
