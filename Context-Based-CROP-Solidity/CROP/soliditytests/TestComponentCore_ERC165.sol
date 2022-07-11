@@ -31,4 +31,8 @@ contract TestComponentCore_ERC165 {
     function testDoesNotSupportRandomInterfaceIds() public {
         Assert.isFalse(component.supportsInterface(0x01ffc9a8), "");
     }
+
+    function testInterfaceMustThrowsFalse() public {
+        Assert.isFalse(component.supportsInterface(0xffffffff), "");
+    }
 }

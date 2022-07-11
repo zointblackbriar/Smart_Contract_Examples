@@ -19,7 +19,7 @@ contract("Greeter", (accounts) => {
     // it("contract was deployed", asyconst { assert } = require("chai");
 const { contract, web3 } = require("hardhat");
 
-const GreeterContract = artifacts.require("Greeter"); 
+//const GreeterContract = artifacts.require("Greeter"); 
 
 contract("Greeter", (accounts) => {
     it("Should return a new greeting instance once it is changed", async function() {

@@ -35,8 +35,8 @@ module.exports = {
    */
 
   description: 'Test Configuration',
-    test_directory: 'mochatests',
-    //test_directory: 'contracts/soliditytests',
+    test_directory: 'soliditytests',
+    //test_directory: 'mochatests',
     migrations_directory: 'migrations',
     contracts_build_directory: 'build/contracts',
 

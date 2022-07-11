@@ -41,8 +41,8 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   paths: {
     sources: "./contracts",
     tests: "./mochatests",
-    cache: "./cache",
-    artifacts: "./artifacts"
+    // cache: "./cache",
+    // artifacts: "./artifacts"
   },
   mocha: {
     timeout: 40000
