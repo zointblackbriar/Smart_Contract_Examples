@@ -23,14 +23,14 @@ import java.util.List;
  */
 public class App 
 {
-    private final static String PRIVATE_KEY = "0x22e7f73be0d5744f2709b0d82e354dd214cd3c05b5580197f2c497a0f30f607f";
+    private final static String PRIVATE_KEY = "0xd93a5d930a42f74099ae52bad176934ca9b7bd16297ef8edf31999ebfaf775a8";
 
     private final static BigInteger GAS_LIMIT = BigInteger.valueOf(6721975L);
     private final static BigInteger GAS_PRICE = BigInteger.valueOf(20000000000L);
 
-    private final static String RECIPIENT = "0xf2277e4Efe7CfAC601E01134199cD8Fe901c2e6a";
+    private final static String RECIPIENT = "0x4E64B8cE0Ff7238677899f100b02BC8f1e0191F4";
 
-    private final static String CONTRACT_ADDRESS = "0xf2277e4Efe7CfAC601E01134199cD8Fe901c2e6a";
+    private final static String CONTRACT_ADDRESS = "0xdd10a09af47e5ec05c9e2c7073393e1372177960d4a38266ffcd5fed2e1afb06";
 
     public static void main(String[] args) {
         try {
@@ -105,15 +105,15 @@ public class App
 
     private void addAddresses(AddressBook addressBook) throws Exception {
         addressBook
-                .addAddress("0x256a04B9F02036Ed2f785D8f316806411D605285", "Tom")
+                .addAddress("0xf9607dEaA419D5f4433390278335D2217e7aD997", "Tom")
                 .send();
 
         addressBook
-                .addAddress("0x82CDf5a3192f2930726637e9C738A78689a91Be3", "Susan")
+                .addAddress("0x3ca9e9F89796e8a81687DaBDf8fd5a02686BE20E", "Susan")
                 .send();
 
         addressBook
-                .addAddress("0x95F57F1DD015ddE7Ec2CbC8212D0ae2faC9acA11", "Bob")
+                .addAddress("0xE7f7F44A8DB8712F1ede9F02729E706AD11e10d9", "Bob")
                 .send();
     }
 
