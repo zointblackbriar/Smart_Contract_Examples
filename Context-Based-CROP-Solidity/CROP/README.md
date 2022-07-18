@@ -23,3 +23,12 @@ Install Truffle 5.5.14 with the following command:
 ```bash
  npm install -g truffle@5.5.14
  ```
+
+
+### INSTALLATION
+
+Install the openzeppelin libraries
+
+```bash
+npm i @openzeppelin/contracts-upgradeable
+```
