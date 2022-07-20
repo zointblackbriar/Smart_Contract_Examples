@@ -32,3 +32,18 @@ Install the openzeppelin libraries
 ```bash
 npm i @openzeppelin/contracts-upgradeable
 ```
+
+Install hardhat gas reporter
+
+```bash
+npm install hardhat-gas-reporter
+```
+Deploy a contract
+
+```bash 
+npx hardhat run --network localhost scripts/UpdatedRole.js
+npx hardhat run --network localhost scripts/UpdatedRoleV2.js
+```
+
+You should change the const PROXY address according to the address of deploy_pizza_v1
+
