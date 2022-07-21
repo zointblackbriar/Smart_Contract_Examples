@@ -41,8 +41,8 @@ npm install hardhat-gas-reporter
 Deploy a contract
 
 ```bash 
-npx hardhat run --network localhost scripts/UpdatedRole.js
-npx hardhat run --network localhost scripts/UpdatedRoleV2.js
+npx hardhat run --network localhost migrations/3_deploy_updatedrole.js
+npx hardhat run --network localhost migrations/4_deploy_updatedroleV2.js
 ```
 
 You should change the const PROXY address according to the address of deploy_pizza_v1

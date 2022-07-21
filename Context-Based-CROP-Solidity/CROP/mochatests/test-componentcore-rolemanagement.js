@@ -1,7 +1,8 @@
 // const { assert } = require("chai");
 // const { contract, web3 } = require("hardhat");
 
-const { assert } = require("chai");
+const { assert } = require("assert");
+const {expect} = require("chai");
 
 const ComponentCoreContract = artifacts.require("ComponentCore");
 const InterfaceLibrary = artifacts.require("InterfaceIds");

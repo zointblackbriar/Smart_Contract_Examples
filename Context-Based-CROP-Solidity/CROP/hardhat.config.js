@@ -1,5 +1,8 @@
 require("@nomiclabs/hardhat-waffle");
 require('@nomiclabs/hardhat-truffle5');
+require("@nomiclabs/hardhat-ethers");
+require("@openzeppelin/hardhat-upgrades");
+require("@nomiclabs/hardhat-etherscan");
 require("hardhat-gas-reporter");
 
 
