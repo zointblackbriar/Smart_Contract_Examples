@@ -3,22 +3,22 @@ pragma solidity >=0.4.22 <0.9.0;
 
 import "truffle/Assert.sol";
 import "../contracts/component-CROP/ComponentCore.sol";
-import "./FakeRole.sol";
-import "./FakeRoleCreator.sol";
-import "./FakeTeam.sol";
+import "./RoleEvaluator.sol";
+import "./RoleCreatorMock.sol";
+import "./TeamEvaluator.sol";
 
-contract TestComponentCore_TypeChecking {
+contract TestComponentCore_TypeSafety {
 
     ComponentCore internal component;
     Team internal team;
 
-    bytes32 f1spec = keccak256("FAKEROLE1");
+    bytes32 f1spec = keccak256("SAMPLEROLE"); //bytecode assignment
 
     function beforeEach() public {
         component = new ComponentCore();
 
-        team = new FakeTeam();
-        team.addRoleCreator(f1spec, new FakeRoleCreator());
+        team = new TeamEvaluator();
+        team.addRoleCreator(f1spec, new RoleCreatorMock());
         team.addRole(f1spec);
     }
 

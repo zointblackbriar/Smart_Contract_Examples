@@ -3,24 +3,24 @@ pragma solidity >=0.4.22 <0.9.0;
 
 import "truffle/Assert.sol";
 import "../contracts/component-CROP/ComponentCore.sol";
-import "./FakeRole.sol";
-import "./FakeRoleCreator.sol";
-import "./FakeTeam.sol";
+import "./RoleEvaluator.sol";
+import "./RoleCreatorMock.sol";
+import "./TeamEvaluator.sol";
 
 contract TestComponentCore_RoleManagement {
 
     ComponentCore internal component;
     Team internal team;
 
-    bytes32 f1spec = keccak256("FAKEROLE1");
-    bytes32 f2spec = keccak256("FAKEROLE2");
+    bytes32 f1spec = keccak256("RoleMock1");
+    bytes32 f2spec = keccak256("RoleMock2");
 
     function beforeEach() public {
         component = new ComponentCore();
 
-        team = new FakeTeam();
-        team.addRoleCreator(f1spec, new FakeRoleCreator());
-        team.addRoleCreator(f2spec, new FakeRoleCreatorSecond());
+        team = new TeamEvaluator();
+        team.addRoleCreator(f1spec, new RoleCreatorMock());
+        team.addRoleCreator(f2spec, new RoleCreatorUpdatedMockV2());
         team.addRole(f1spec);
         team.addRole(f2spec);
 
@@ -45,7 +45,7 @@ contract TestComponentCore_RoleManagement {
         component.addRole(f1spec, role1);
 
         // When
-        team.addRoleCreator(f1spec, new FakeRoleUpdatedCreator());
+        team.addRoleCreator(f1spec, new RoleCreatorMock());
         team.addRole(f1spec);
         address role1Updated = team.getRole(f1spec);
         component.addRole(f1spec, role1Updated);
@@ -103,7 +103,7 @@ contract TestComponentCore_RoleManagement {
         component.removeRole(f1spec);
 
         // Then
-        try FakeRole(role1).sampleFunction() {
+        try RoleEvaluator(role1).sampleFunction() {
             Assert.fail("");
         } catch Error(string memory /*reason*/) {
             // Failure expected.

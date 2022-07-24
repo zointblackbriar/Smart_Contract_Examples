@@ -4,7 +4,7 @@ pragma solidity >=0.4.22 <0.9.0;
 import "truffle/Assert.sol";
 import "../contracts/component-CROP/ComponentCore.sol";
 import "../contracts/component-CROP/InterfaceIds.sol";
-import "./FakeTeam.sol";
+import "./TeamEvaluator.sol";
 
 contract TestComponentCore_TeamManagement {
 
@@ -13,7 +13,7 @@ contract TestComponentCore_TeamManagement {
 
     function beforeEach() public {
         component = new ComponentCore();
-        team = new FakeTeam();
+        team = new TeamEvaluator();
     }
 
     function testRetrieveTeamAfterActivating() public {

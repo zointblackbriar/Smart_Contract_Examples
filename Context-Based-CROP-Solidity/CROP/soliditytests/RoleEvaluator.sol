@@ -3,10 +3,10 @@ pragma solidity >=0.7.0 <0.9.0;
 
 import "../contracts/component-CROP/ComponentRole.sol";
 
-contract FakeRole is ComponentRole {
+contract RoleEvaluator is ComponentRole {
     function sampleFunction() public onlyWhenActive { }
 }
 
-contract FakeRoleUpdated is ComponentRole { }
+contract RoleUpdated is ComponentRole { }
 
-contract FakeRoleSecond is ComponentRole { }
+contract RoleUpdatedV2 is ComponentRole { }

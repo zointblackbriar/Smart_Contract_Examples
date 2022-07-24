@@ -4,14 +4,14 @@ pragma solidity >=0.4.22 <0.9.0;
 import "truffle/Assert.sol";
 import "../contracts/component-CROP/ComponentCore.sol";
 import "../contracts/component-CROP/InterfaceIds.sol";
-import "./FakeRole.sol";
+import "./RoleEvaluator.sol";
 
 contract TestComponentRole_ERC165 {
 
-    FakeRole internal role;
+    RoleEvaluator internal role;
 
     function beforeEach() public {
-        role = new FakeRole();
+        role = new RoleEvaluator();
     }
 
     function testSupportsErc165() public {

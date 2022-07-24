@@ -3,22 +3,22 @@ pragma solidity >=0.7.0 <0.9.0;
 
 import "../contracts/component-CROP/ComponentRole.sol";
 import "../contracts/component-CROP/RoleCreator.sol";
-import "./FakeRole.sol";
+import "./RoleEvaluator.sol";
 
-contract FakeRoleCreator is RoleCreator {
+contract RoleCreatorMock is RoleCreator {
     function createFor(bytes32 spec) external override returns (ComponentRole) {
-        return new FakeRole();
+        return new RoleEvaluator();
     }
 }
 
-contract FakeRoleUpdatedCreator is RoleCreator {
+contract RoleCreatorUpdatedMock is RoleCreator {
     function createFor(bytes32 spec) external override returns (ComponentRole) {
-        return new FakeRoleUpdated();
+        return new RoleUpdated();
     }
 }
 
-contract FakeRoleCreatorSecond is RoleCreator {
+contract RoleCreatorUpdatedMockV2 is RoleCreator {
     function createFor(bytes32 spec) external override returns (ComponentRole) {
-        return new FakeRoleSecond();
+        return new RoleUpdatedV2();
     }
 }

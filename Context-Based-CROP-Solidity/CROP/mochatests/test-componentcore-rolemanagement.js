@@ -1,5 +1,3 @@
-// const { assert } = require("chai");
-// const { contract, web3 } = require("hardhat");
 
 const { assert } = require("assert");
 const {expect} = require("chai");

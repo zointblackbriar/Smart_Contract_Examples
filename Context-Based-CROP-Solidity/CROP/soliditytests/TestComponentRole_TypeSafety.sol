@@ -4,15 +4,15 @@ pragma solidity >=0.4.22 <0.9.0;
 import "truffle/Assert.sol";
 import "../contracts/component-CROP/ComponentCore.sol";
 import "../contracts/component-CROP/InterfaceIds.sol";
-import "./FakeRole.sol";
-import "./FakeTeam.sol";
+import "./RoleEvaluator.sol";
+import "./TeamEvaluator.sol";
 
-contract TestComponentRole_TypeChecking {
+contract TestComponentRole_TypeSafety {
 
-    FakeRole internal role;
+    RoleEvaluator internal role;
 
     function beforeEach() public {
-        role = new FakeRole();
+        role = new RoleEvaluator();
     }
 
     function testSetCoreAcceptsZeroAddress() public {
@@ -37,7 +37,7 @@ contract TestComponentRole_TypeChecking {
 
     function testSetCoreDoesNotAcceptRoleAddress() public {
         // Given
-        FakeRoleSecond role2 = new FakeRoleSecond();
+        RoleUpdatedV2 role2 = new RoleUpdatedV2();
 
         // Then
         try role.setCore(address(role2)) {
@@ -57,7 +57,7 @@ contract TestComponentRole_TypeChecking {
 
     function testSetTeamAcceptsTeamAddress() public {
         // Given
-        FakeTeam team = new FakeTeam();
+        TeamEvaluator team = new TeamEvaluator();
 
         // Then
         try role.setTeam(address(team)) {
@@ -69,7 +69,7 @@ contract TestComponentRole_TypeChecking {
 
     function testSetTeamDoesNotAcceptRoleAddress() public {
         // Given
-        FakeRoleSecond role2 = new FakeRoleSecond();
+        RoleUpdatedV2 role2 = new RoleUpdatedV2();
 
         // Then
         try role.setTeam(address(role2)) {

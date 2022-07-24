@@ -5,4 +5,4 @@ pragma solidity >=0.7.0 <0.9.0;
 import "../contracts/component-CROP/Team.sol";
 import "../contracts/component-CROP/ComponentRole.sol";
 
-contract FakeTeam is Team { }
+contract TeamEvaluator is Team { }
