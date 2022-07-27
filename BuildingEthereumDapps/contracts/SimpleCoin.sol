@@ -48,7 +48,7 @@ contract SimpleCoin {
     }
 
     function transferFrom(address _from, address _to, uint _amount) public returns (bool) {
-        require(_to != 0x0); 
+        require(_to != address(0x0)); 
         require(coinBalance[_from] > _amount);
         require(coinBalance[_to] + _amount > coinBalance[_to]); 
         require(_amount <= allowance[_from][msg.sender]);
