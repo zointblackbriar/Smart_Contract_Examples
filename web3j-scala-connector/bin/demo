@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sbt "test:runMain demo.CreateSmartContracts" \
+    "test:runMain demo.Main"
