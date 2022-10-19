@@ -1,8 +1,10 @@
 //SPDX-License-Identifier: MIT
 pragma solidity >=0.8.7; 
 
+import "./FactoryBoxRoles.sol";
 
-contract CellConfigurator {
+
+contract CellConfigurator is FactoryBoxRoles {
     //Each participant should have unique Id in the network. 
     string public companyName; 
     string  public companyId; 
@@ -37,4 +39,9 @@ contract CellConfigurator {
     function setCompanyId(string memory _companyId) onlyOwner public {
         companyId = _companyId;
     }
+
+    function getType() public pure override returns(Constants.ClassType) {
+        return Constants.ClassType.CellConfigurator;
+    }
+
 }

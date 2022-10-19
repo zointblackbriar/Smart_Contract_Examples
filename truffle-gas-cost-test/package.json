@@ -1,0 +1,23 @@
+{
+  "name": "truffle-gas-cost-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eth-gas-reporter": "^0.2.25",
+    "ganache-cli": "^6.12.2",
+    "mocha": "^7.2.0",
+    "save": "^2.5.0",
+    "solc": "^0.8.15",
+    "web3": "^1.7.4"
+  }
+}
