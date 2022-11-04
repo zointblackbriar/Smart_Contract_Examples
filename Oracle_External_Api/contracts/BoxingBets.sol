@@ -51,7 +51,7 @@ contract BoxingBets {
  
     /// @notice gets a list ids of all currently bettable matches
     /// @return array of match ids 
-    function getBettableMatches() public view returns (bytes32[]) {
+    function getBettableMatches() public view returns (bytes32[] memory) {
         return boxingOracle.getPendingMatches(); 
     }
 
@@ -60,8 +60,8 @@ contract BoxingBets {
     /// @return match data 
     function getMatch(bytes32 _matchId) public view returns (
         bytes32 id,
-        string name, 
-        string participants,
+        string memory name, 
+        string memory participants,
         uint8 participantCount,
         uint date, 
         OracleInterface.MatchOutcome outcome, 
@@ -74,8 +74,8 @@ contract BoxingBets {
     /// @return match data 
     function getMostRecentMatch() public view returns (
         bytes32 id,
-        string name, 
-        string participants,
+        string memory name, 
+        string memory participants,
         uint participantCount, 
         uint date, 
         OracleInterface.MatchOutcome outcome, 
