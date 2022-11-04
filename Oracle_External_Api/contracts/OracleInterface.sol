@@ -87,8 +87,8 @@ contract OracleInterface {
     /// @return match data of the specified match 
     function getMatch(bytes32 _matchId) public view returns (
         bytes32 id,
-        string name, 
-        string participants,
+        string memory name, 
+        string memory participants,
         uint8 participantCount,
         uint date, 
         MatchOutcome outcome, 
@@ -110,8 +110,8 @@ contract OracleInterface {
     /// @return match data 
     function getMostRecentMatch(bool _pending) public view returns (
         bytes32 id,
-        string name, 
-        string participants,
+        string memory name, 
+        string memory participants,
         uint8 participantCount,
         uint date, 
         MatchOutcome outcome, 
