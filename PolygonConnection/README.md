@@ -22,3 +22,13 @@ curl https://mainnet.infura.io/v3/{id} \
 -H "Content-Type: application/json" \
 -d '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
 ```
+
+### ETHERSCAN VERIFICATION
+
+Use the following commands: 
+
+```bash
+npm install --save-dev @nomiclabs/hardhat-etherscan
+npx hardhat verify --network matic 0x4b75233D4FacbAa94264930aC26f9983e50C11AF
+```
+
