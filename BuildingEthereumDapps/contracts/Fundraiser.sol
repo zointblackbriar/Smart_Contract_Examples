@@ -86,4 +86,8 @@ contract Fundraiser is Ownable {
         publicDonations = publicDonations.add(msg.value); 
         donationCount++;
     }
+
+    receive() external payable {
+        
+    }
 }

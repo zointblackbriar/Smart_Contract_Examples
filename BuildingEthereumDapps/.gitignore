@@ -10,3 +10,4 @@ artifacts
 
 # Hardhat configuration files
 hardhat.config.js
+truffle-config.js
