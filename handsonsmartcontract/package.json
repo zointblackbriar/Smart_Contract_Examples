@@ -1,0 +1,23 @@
+{
+  "name": "handsonsmartcontract",
+  "version": "1.0.0",
+  "description": "Sample hands on smart contract project",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.3.6",
+    "chai-as-promised": "7.1.1",
+    "chai-bignumber": "3.0.0"
+  },
+  "devDependencies": {
+    "solhint": "^3.3.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "solhint": "./node_modules/.bin/solhint -f table contracts/**/*.sol"
+  },
+  "author": "Orcun",
+  "license": "MIT"
+}

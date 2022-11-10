@@ -1,11 +1,12 @@
-pragma solidity >=0.4.0 <= 0.8.13; 
+//SPDX-License-Identifier: MIT
+pragma solidity >=0.8.7.0; 
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract Greeter is Ownable{
     string private _greeting = "Sample Message"; 
 
-    function greet() external view returns (string memory) {
+    function getGreeting() external view returns (string memory) {
         return _greeting; 
     }
 
