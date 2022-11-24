@@ -1,12 +1,14 @@
 # Quorum Dev Quickstart
 
 ## Table of Contents
-1. [Prerequisites](#prerequisites)
-2. [Usage](#usage)
-3. [Dev Network Setups](#dev-network-setups)
-    1. [POA Network](#poa-network)
-    2. [POA Network with Privacy](#poa-network-privacy)
-    3. [Smart Contracts & DApps](#poa-network-dapps)
+- [Quorum Dev Quickstart](#quorum-dev-quickstart)
+  - [Table of Contents](#table-of-contents)
+  - [Prerequisites](#prerequisites)
+  - [Usage](#usage)
+  - [Dev Network Setups](#dev-network-setups)
+    - [i. POA Network <a name="poa-network"></a>](#i-poa-network-)
+    - [ii. POA Network with Privacy <a name="poa-network-privacy"></a>](#ii-poa-network-with-privacy-)
+    - [iii. Smart Contracts & DApps <a name="poa-network-dapps"></a>](#iii-smart-contracts--dapps-)
                   
 
 ## Prerequisites
@@ -64,7 +66,7 @@ The overall architecture diagrams to visually show components of the blockchain 
 
 This is the simplest of the networks available and will spin up a blockchain network comprising 4 validators, 1 RPC 
 node which has an [EthSigner](http://docs.ethsigner.consensys.net/) proxy container linked to it so you can optionally sign transactions. To view the progress 
-of the network, the Alethio block explorer can be used and is available on `http://localhost:25000`. 
+of the network, the Quorum block explorer can be used and is available on `http://localhost:25000`. 
 Hyperledger Besu based Quorum also deploys monitoring solutions.
 You can choose to make metrics monitoring via Prometheus available on `http://localhost:9090`, 
 paired with Grafana with custom dashboards available on `http://localhost:3000`.
@@ -83,7 +85,7 @@ Use cases:
 This network is slightly more advanced than the former and you get everything from the POA network above and a few 
 Ethereum clients each paired with [Tessera](https://docs.tessera.consensys.net/en/latest/) for its Private Transaction Mananger.
 
-As before, to view the progress of the network, the Alethio block explorer can be used and is available on `http://localhost:25000`.
+As before, to view the progress of the network, the Quorum block explorer can be used and is available on `http://localhost:25000`.
 Hyperledger Besu based Quorum also deploys monitoring solutions.
 You can choose to make metrics monitoring via Prometheus available on `http://localhost:9090`,
 paired with Grafana with custom dashboards available on `http://localhost:3000`.
@@ -98,7 +100,7 @@ Use cases:
 
 Once the network is up and running you can make public transactions on the chain and interact with the smart contract at its deployed address, 
 and you can also make private transaction between members and verify that other nodes do not see it.
-Under the smart_contracts folder there is a `SimpleStorage` contract which we use for both as an example.
+Under the smart_contracts folder there is a `SimpleStorage` contract which we use for both as an example. The `SimpleStorage` contract will store a value and emit an event with that stored value, you can either observe the events or call the `get` function on the contract to get the value.
 
 For the public transaction:
 ```
@@ -109,7 +111,7 @@ node scripts/public_tx.js
 which creates an account and then deploys the contract with the account's address. It also initializes the default constructor 
 with a value (47). Once done, it will call the `get` function on the contract to check the value at the address, and 
 you should see it return the value. Then it will call the `set` function on the contract and update the value (123) 
-and then verify the address to make sure its been updated.
+and then verify the address to make sure its been updated. It will then call `getPastEvents("allEvents", { fromBlock: 0, toBlock: 'latest' })` to fetch all the historical events for that contract, this confirm that events have been emited for both the constructor and the set.
 
 ```
 node scripts/public_tx.js 
@@ -131,7 +133,7 @@ Obtained value at deployed contract is: 47
 Use the smart contracts 'set' function to update that value to 123 .. 
 Verify the updated value that was set .. 
 Obtained value at deployed contract is: 123
-
+Obtained all value events from deployed contract : [47,123]
 ```
 
 
@@ -201,3 +203,8 @@ and you can adopt a pet from there. NOTE: Once you have adopted a pet, you can a
 and search for the transaction where you can see its details recorded. Metamask will also have a record of any transactions.
 
 
+## Moving to production
+
+When you are ready to move to production, please create new keys for your nodes using the
+[Quorum Genesis Tool](https://www.npmjs.com/package/quorum-genesis-tool) and read through the the
+[Besu documentation](https://besu.hyperledger.org/en/latest/HowTo/Deploy/Cloud/)
