@@ -1,6 +1,6 @@
 {
   "name": "codefi-orchestrate-quick-start",
-  "version": "3.2.0",
+  "version": "4.0.0",
   "description": "Codefi Orchestrate Quick start",
   "config": {
     "services": "api tx-sender tx-listener",
@@ -25,7 +25,7 @@
     "send-tx": "dotenv ts-node src/send-tx",
     "send-eea-private-tx": "dotenv ts-node src/send-eea-private-tx",
     "send-tessera-private-tx": "dotenv ts-node src/send-tessera-private-tx",
-    "sign-payload": "dotenv ts-node src/sign-payload",
+    "sign-message": "dotenv ts-node src/sign-message",
     "verify-signature": "dotenv ts-node src/verify-signature",
     "sign-typed-data": "dotenv ts-node src/sign-typed-data",
     "gasprice-retry": "dotenv ts-node src/gasprice-retry",
@@ -68,19 +68,19 @@
   },
   "homepage": "https://github.com/ConsenSys/quorum-dev-quickstart",
   "devDependencies": {
-    "@openzeppelin/contracts": "~3.1.0",
+    "@openzeppelin/contracts": "~4.7.3",
     "@types/uuid": "^8.0.0",
-    "axios": "~0.19.2",
+    "axios": "^0.25.0",
     "cross-var": "~1.1.0",
     "dotenv": "~8.2.0",
     "dotenv-cli": "~3.1.0",
-    "ethers": "~5.0.15",
-    "husky": "~4.2.5",
+    "ethers": "^5.5.3",
+    "husky": "^4.3.8",
     "lint-staged": "~10.2.2",
-    "pegasys-orchestrate": "^5.0.0",
+    "pegasys-orchestrate": "^6.1.0",
     "prettier": "~2.0.5",
     "rimraf": "~3.0.2",
-    "truffle": "~5.1.47",
+    "truffle": "~5.6.6",
     "ts-node": "~8.10.1",
     "tslint": "~6.1.2",
     "tslint-config-prettier": "~1.18.0",
@@ -102,6 +102,5 @@
       "tslint",
       "git add"
     ]
-  },
-  "dependencies": {}
+  }
 }

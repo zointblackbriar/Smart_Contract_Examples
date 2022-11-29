@@ -15,11 +15,12 @@ x-default-variables: &default-variables
   AUTH_JWT_CERT: ${AUTH_JWT_CERT-}
   AUTH_API_KEY: ${AUTH_API_KEY-}
   AUTH_JWT_ISSUER_URL: ${AUTH_JWT_ISSUER_URL-}
+  AUTH_JWT_ORCHESTRATE_CLAIMS: ${AUTH_JWT_ORCHESTRATE_CLAIMS-}
   METRICS_MODULES: ${METRICS_MODULES-}
 
 x-container-common: &container-common
   restart: ${CONTAINER_RESTART-on-failure}
-  image: consensys/orchestrate:v21.10.1-alpha.2
+  image: consensys/orchestrate:v21.12.1
   networks:
   - orchestrate
   - deps
@@ -135,4 +136,4 @@ networks:
       name: qkm_quorum-dev-quickstart
   network:
     external:
-      name: network_quorum-dev-quickstart
+      name: quorum-dev-quickstart
