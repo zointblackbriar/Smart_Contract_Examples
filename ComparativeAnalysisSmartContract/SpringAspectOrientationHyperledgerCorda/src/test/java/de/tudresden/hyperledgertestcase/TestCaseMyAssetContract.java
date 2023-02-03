@@ -18,12 +18,12 @@ import org.junit.jupiter.api.Test;
 import de.tudresden.hyperledgergateway.MyAsset;
 import de.tudresden.hyperledgergateway.MyAssetContract;
 
-public class TestMyAssetContract {
+public class TestCaseMyAssetContract {
 
     @Nested
     class AssetExists {
         @Test
-        public void noProperAsset() {
+        public void testNoProperAsset() {
 
             MyAssetContract contract = new  MyAssetContract();
             Context ctx = mock(Context.class);
@@ -37,7 +37,7 @@ public class TestMyAssetContract {
         }
 
         @Test
-        public void assetExists() {
+        public void testAssetExists() {
 
             MyAssetContract contract = new  MyAssetContract();
             Context ctx = mock(Context.class);
@@ -52,7 +52,7 @@ public class TestMyAssetContract {
         }
 
         @Test
-        public void noKey() {
+        public void testNoKey() {
             MyAssetContract contract = new  MyAssetContract();
             Context ctx = mock(Context.class);
             ChaincodeStub stub = mock(ChaincodeStub.class);
@@ -71,7 +71,7 @@ public class TestMyAssetContract {
     class AssetCreates {
 
         @Test
-        public void newAssetCreate() {
+        public void testNewAssetCreate() {
             MyAssetContract contract = new  MyAssetContract();
             Context ctx = mock(Context.class);
             ChaincodeStub stub = mock(ChaincodeStub.class);
@@ -85,7 +85,7 @@ public class TestMyAssetContract {
         }
 
         @Test
-        public void alreadyExists() {
+        public void testAlreadyExists() {
             final MyAssetContract contract = new  MyAssetContract();
             final Context ctx = mock(Context.class);
             ChaincodeStub stub = mock(ChaincodeStub.class);
@@ -104,7 +104,7 @@ public class TestMyAssetContract {
     }
 
     @Test
-    public void assetRead() {
+    public void testAssetRead() {
         MyAssetContract contract = new  MyAssetContract();
         Context ctx = mock(Context.class);
         ChaincodeStub stub = mock(ChaincodeStub.class);
@@ -123,7 +123,7 @@ public class TestMyAssetContract {
     @Nested
     class AssetUpdates {
         @Test
-        public void updateExisting() {
+        public void testUpdateExisting() {
             MyAssetContract contract = new  MyAssetContract();
             Context ctx = mock(Context.class);
             ChaincodeStub stub = mock(ChaincodeStub.class);
@@ -137,7 +137,7 @@ public class TestMyAssetContract {
         }
 
         @Test
-        public void updateMissing() {
+        public void testUpdateMissing() {
             final MyAssetContract contract = new  MyAssetContract();
             final Context ctx = mock(Context.class);
             ChaincodeStub stub = mock(ChaincodeStub.class);
@@ -155,7 +155,7 @@ public class TestMyAssetContract {
     }
 
     @Test
-    public void assetDelete() {
+    public void testAssetDelete() {
         final MyAssetContract contract = new  MyAssetContract();
         final Context ctx = mock(Context.class);
         ChaincodeStub stub = mock(ChaincodeStub.class);
