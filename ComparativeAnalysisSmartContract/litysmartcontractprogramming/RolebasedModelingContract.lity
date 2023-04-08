@@ -1,0 +1,47 @@
+pragma solidity >0.4.0; 
+
+contract RolebasedModelingContract {
+
+    struct Person {
+        string name; 
+        bool eligible; 
+        address addr; 
+    }
+
+    struct Retailer {
+        int id; 
+        string name;
+        int amountOfOrder;
+    }
+
+    struct WholeSaler {
+        int id; 
+        string name; 
+        int amountOfWholeSaling;
+    }
+
+    struct Producer {
+        int id; 
+        int amountToBeProduced; 
+    }
+
+    mapping (address => uint256) matchedPerson; 
+
+    Person[] ps; 
+    Retailer rt; 
+
+    constructor() public {
+        factInsert rt; //rule engine should be aware of the data
+        rt.amountOfOrder = 100;
+    }
+
+    function addPerson(string memory name ) public {
+        ps.push(Person(name, true, msg.sender));
+    }
+
+    //sample function. There is no meaning
+    function reverse(string memory input) public returns(string memory) {
+        string memory output = eni("sample", input); 
+        return output; 
+    }
+}
