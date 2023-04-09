@@ -1,0 +1,27 @@
+pragma solidity >=0.4.21; 
+
+    library RoleLibrary {
+        struct Role {
+            string name; 
+            bool eligible; 
+            address addr; 
+        }
+
+        struct Retailer {
+            int id; 
+            string name;
+            int amountOfOrder;
+        }
+
+        struct Wholesaler {
+            int id; 
+            string name; 
+            int amountOfWholeSaling;
+        }
+
+        struct Producer {
+            int id; 
+            int producedOrder; 
+        }
+    }
+

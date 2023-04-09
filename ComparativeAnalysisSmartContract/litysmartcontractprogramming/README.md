@@ -17,3 +17,15 @@ In order to compile the rule engine, you need to type as follows:
 /build/lityc/lityc --bin ComparativeAnalysisSmartContract/litysmartcontractprogramming/RolebasedModelingContract.lity
 ```
 
+You can analyze the file aspect of static code investigation with the following tools: 
+
+> Mythril
+> Slither
+
+```bash
+myth analyze RolebasedModelingContract.lity
+``` 
+
+```bash
+slither 
+``` 

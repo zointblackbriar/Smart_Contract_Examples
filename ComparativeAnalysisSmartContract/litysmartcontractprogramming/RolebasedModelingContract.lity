@@ -1,47 +1,57 @@
-pragma solidity >0.4.0; 
+pragma solidity >0.4.21; 
+pragma experimental ABIEncoderV2;
 
+import "./QueueForItem.lity";
+import "./StackForItem.lity";
+import "./RoleLibrary.lity";
+
+/// @author Orcun Oruc
+/// @notice This is the research paper implementation of Lity rule engine
 contract RolebasedModelingContract {
 
-    struct Person {
-        string name; 
-        bool eligible; 
-        address addr; 
-    }
+    mapping (string => RoleLibrary.Retailer[]) roleForRetailerType; 
+    mapping (string => RoleLibrary.Wholesaler[]) roleForWholesalerType; 
+    mapping (string => RoleLibrary.Producer[]) roleForProducer;
 
-    struct Retailer {
-        int id; 
-        string name;
-        int amountOfOrder;
-    }
-
-    struct WholeSaler {
-        int id; 
-        string name; 
-        int amountOfWholeSaling;
-    }
-
-    struct Producer {
-        int id; 
-        int amountToBeProduced; 
-    }
-
-    mapping (address => uint256) matchedPerson; 
-
-    Person[] ps; 
-    Retailer rt; 
+    RoleLibrary.Role[] public roles; 
+    RoleLibrary.Retailer[] public retailers; 
+    RoleLibrary.Wholesaler[] public wholesalers; 
+    RoleLibrary.Producer[] public producers;
 
     constructor() public {
-        factInsert rt; //rule engine should be aware of the data
-        rt.amountOfOrder = 100;
+        
     }
 
-    function addPerson(string memory name ) public {
-        ps.push(Person(name, true, msg.sender));
+    function addRole(string memory name) public {
+        roleForRetailerType[name] = retailers;
     }
 
-    //sample function. There is no meaning
-    function reverse(string memory input) public returns(string memory) {
+    function addItemToRetailer(int id, string memory name, int amountOfOrder) public{
+        retailers.push(RoleLibrary.Retailer(id, name, amountOfOrder));
+    }
+
+    function addItemToWholesaler(int id, string memory name, int amountOfOrder) public{
+        retailers.push(RoleLibrary.Retailer(id, name, amountOfOrder));
+    }
+
+    function addItemToProducer(int id, string memory name, int producedOrder) public{
+        retailers.push(RoleLibrary.Retailer(id, name, producedOrder));
+    }
+
+
+    function personForProductionInteraction() public {
+        //Person will put an item to stack 
+        StackForItem stack; 
+        stack.pushItem("item1");
+        stack.pushItem("item2"); 
+        stack.pushItem("item3");
+        stack.popItem();
+    }
+
+    function dummyFunction(string memory input) public pure returns(string memory) {
         string memory output = eni("sample", input); 
         return output; 
     }
 }
+
+

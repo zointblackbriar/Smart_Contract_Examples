@@ -1,0 +1,16 @@
+pragma solidity >=0.4.21;
+
+contract StackForItem {
+	string[] stack; 
+
+	function pushItem(string memory data) public {
+		stack.push(data);
+	}
+
+	function popItem() public view returns (string memory data) {
+		data = stack[stack.length - 1]; 
+		stack.length - 1;
+	}
+}
+
+

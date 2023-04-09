@@ -1,0 +1,19 @@
+pragma solidity >0.4.21; 
+
+contract QueueForItem {
+	mapping(uint256 => bytes ) queue; 
+	uint256 first = 1; 
+	uint256 last = 0; 
+
+	function enqueueItem(bytes memory data) public {
+		last += 1; 
+		queue[last] = data;
+	}
+
+	function dequeuItem() public returns(bytes memory data) {
+		require(last >= first); 
+		data = queue[first]; 
+		delete queue[first]; 
+		first += 1; 
+	}
+} 
