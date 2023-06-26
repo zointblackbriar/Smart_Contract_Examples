@@ -19,3 +19,10 @@ def setOwnerAndSendEth(owner: address):
 	self.owner = owner
 	self.eth = msg.value
 
+
+
+
+
+
+
+
