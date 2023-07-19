@@ -6,6 +6,38 @@ A fresh FRAME-based [Substrate](https://www.substrate.io/) node, ready for hacki
 
 Follow these steps to get started with the Node Template :hammer_and_wrench:
 
+## Install the following requirements: 
+
+Parity-db is necessary to install 
+
+```bash 
+cargo update -p parity-db
+
+```
+
+And then, for Windows operating system, do the following step: 
+
+``` 
+rustup toolchain install stable-x86_64-pc-windows-gnu
+rustup default stable-x86_64-pc-windows-gnu
+```
+
+Or, you gonna get the following error: 
+
+```bash
+Caused by:
+  unable to get packages from source
+
+Caused by:
+  failed to download replaced source registry `crates-io`
+
+Caused by:
+  failed to parse manifest at `C:\Users\Orcun\.cargo\registry\src\index.crates.io-6f17d22bba15001f\parity-db-0.2.2\Cargo.toml`
+
+Caused by:
+  failed to parse the version requirement `0.11 ` for dependency `parking_lot`
+```
+
 ## Prerequisities
 
 Before you start, please change version of rustc 
