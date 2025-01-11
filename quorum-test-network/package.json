@@ -102,5 +102,8 @@
       "tslint",
       "git add"
     ]
+  },
+  "dependencies": {
+    "codefi-orchestrate-quick-start": "file:"
   }
 }

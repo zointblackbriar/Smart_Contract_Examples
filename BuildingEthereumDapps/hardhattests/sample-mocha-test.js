@@ -5,13 +5,6 @@ const solc = require('solc');
 const Web3 = require('web3');
 const web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
 
-// Only works with solidity version 0.4.25, not higher version
-// const source = fs.readFileSync('/media/zoint/D0F4-36FA/AllFiles/Projeler/zointblackbriar/Smart_Contract_Examples/BuildingEthereumDapps/contracts/SimpleCoin.sol', 'utf-8');
-// const compiledContract = solc.compile(source, 1); 
-// console.log("compiledContract: " + JSON.stringify(compiledContract));
-// const abi = compiledContract.contracts[':SimpleCoin']; 
-// console.log("abi: " + abi);
-
 //Instead
 const contract = JSON.parse(fs.readFileSync("./client/src/contracts/SimpleCoin.json", "utf-8")); 
 console.log(JSON.stringify(contract.abi));

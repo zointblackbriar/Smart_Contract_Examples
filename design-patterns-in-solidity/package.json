@@ -18,6 +18,7 @@
     "mocha": "^7.2.0",
     "save": "^2.5.0",
     "solc": "^0.8.15",
+    "truffle-gas-cost-test": "file:",
     "web3": "^1.7.4"
   }
 }

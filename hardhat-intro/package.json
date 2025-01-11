@@ -33,6 +33,7 @@
     "typescript": "^4.5.4"
   },
   "dependencies": {
-    "hardhat-console": "^1.0.0"
+    "hardhat-console": "^1.0.0",
+    "hardhat-project": "file:"
   }
 }

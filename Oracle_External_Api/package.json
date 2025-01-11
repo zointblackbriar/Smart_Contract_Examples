@@ -9,6 +9,7 @@
   "dependencies": {
     "bluebird": "^3.5.1",
     "fetch": "^1.1.0",
+    "oracle_external_api": "file:",
     "truffle-contract": "^3.0.1",
     "web3": "1.3.4"
   },

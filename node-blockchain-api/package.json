@@ -9,6 +9,7 @@
   "author": "Orcun Oruc",
   "license": "ISC",
   "dependencies": {
+    "blockchain-api": "file:",
     "express": "^4.17.1",
     "web3": "^1.2.6"
   }

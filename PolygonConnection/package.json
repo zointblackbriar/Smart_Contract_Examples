@@ -20,6 +20,7 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.1",
+    "hardhat-project": "file:",
     "solc": "^0.8.15"
   }
 }
