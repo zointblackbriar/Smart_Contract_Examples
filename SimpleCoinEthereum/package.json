@@ -1,21 +1,26 @@
 {
-  "name": "simplecoinethereum",
+  "name": "simple-coin-erc20",
   "version": "1.0.0",
-  "description": "Simple Coin Transfer with Ethereum",
+  "description": "A simple ERC-20 token implementation using Foundry",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "mocha" : "mocha dummytest.js"
+    "test": "forge test",
+    "test:verbose": "forge test -vv",
+    "test:gas": "forge test --gas-report",
+    "build": "forge build",
+    "clean": "forge clean",
+    "deploy": "forge script script/Deploy.s.sol:Deploy --rpc-url $RPC_URL --private-key $PRIVATE_KEY --broadcast",
+    "format": "forge fmt"
   },
   "keywords": [
-    "Ethereum",
-    "Blockchain",
-    "Smart",
-    "Contracts"
+    "erc20",
+    "ethereum",
+    "foundry",
+    "solidity"
   ],
   "author": "Orcun Oruc",
   "license": "MIT",
-  "dependencies": {
-    "assert": "^2.0.0"
+  "devDependencies": {
+    "forge-std": "latest"
   }
 }
