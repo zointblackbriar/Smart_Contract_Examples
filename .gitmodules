@@ -1,0 +1,6 @@
+[submodule "SimpleCoinEthereum/lib/forge-std"]
+	path = SimpleCoinEthereum/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "SimpleCoinEthereum/lib/openzeppelin-contracts"]
+	path = SimpleCoinEthereum/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
